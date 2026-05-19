@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- FrameWork file  -->
+    <link rel="stylesheet" href="CSS/framework.css">
+    <!-- Main CSS File  -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <!-- Settings CSS File  -->
+    <link rel="stylesheet" href="CSS/settings.css">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <h3>
+                <span class="circle-bullet"></span>
+                Mohanad
+            </h3>
+            <ul>
+                <li>
+                    <a index.html" >
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>                   
+                    <a href="profile.html">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html" >
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>                    
+                    <a href="courses.html" >
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>                   
+                    <a href="friends.html" >
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content-wrapper">
+            <header>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="search" placeholder="Type A keyword">
+                </div>
+                    <div class="image p-relative">
+                    <img src="images/my-avatar.jpg" alt="">
+                </div>
+            </header>
+
+            <div class="settings-body p-20">
+                <h1 class="main-title">Settings</h1>
+
+                <div class="settings-content">
+                    <div class="card site-control">
+                        <div class="card-head-text">
+                            <h2>site control</h2>
+                            <p>Control The Website If There Is Maintenance</p>
+                        </div>
+                        <div class="website-control pt-20">
+                            <span>Website Control</span>
+                            <p class="fs-13 c-grey mt-5">Open/Close Website And Type The Reason</p>
+                            <div class="toggle-switch-off" style="right: 20px;">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                        </div>
+                        <textarea name="content" id="" placeholder="Clone Message content"></textarea>
+                    </div>
+
+                    <div class="card general-info">
+                        <div class="card-head-text">
+                            <h2>General Info</h2>
+                            <p>General Information About Your Account</p>
+                        </div>
+                        <form action="">
+                            <div>
+                                <label for="">First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div>
+                                <label for="">Last Name</label>
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <div class="mail">
+                                    <input type="email" placeholder="mohanad.moh179@gmail.com" readonly>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card security-info">
+                        <div class="card-head-text">
+                            <h2>Security Info</h2>
+                            <p>Security Information About Your Account</p>
+                        </div>
+                        <div class="password pt-15 pb-15 p-relative">
+                            <span>Password</span>
+                            <p class="fs-13 mt-5 mb-15 c-grey">Last Change On 25/10/2021</p>
+                            <a href="#">Change</a>
+                        </div>
+                        <div class="two-f-a pt-15 pb-15 p-relative">
+                            <span>Two-Factor Authentication</span>
+                            <p class="fs-13 mt-5 mb-15 c-grey">Enable/Disable The Feature</p>
+                            <div class="toggle-switch-on">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                        <div class="devices pt-15 pb-15 p-relative">
+                            <span>Devices</span>
+                            <p class="fs-13 mt-5 mb-15 c-grey">Check The Login Devices List</p>
+                            <a href="#">Devices</a>
+                        </div>
+                    </div>
+
+                    <div class="card social-info">
+                        <div class="card-head-text">
+                            <h2>Social Info</h2>
+                            <p class="mb-20">Social Media Information</p>
+                        </div>
+                        <div class="input-row center-flex mb-15 twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                            <input class="w-full" type="text" placeholder="Twitter Username">
+                        </div>
+                        <div class="input-row center-flex mb-15 facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <input class="w-full" type="text" placeholder="Facebook Username">
+                        </div>
+                        <div class="input-row center-flex mb-15 linkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <input class="w-full" type="text" placeholder="LinkedIn Username">
+                        </div>
+                        <div class="input-row center-flex mb-15 youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                            <input class="w-full" type="text" placeholder="Youtube Username">
+                        </div>
+                    </div>
+
+                    <div class="card widgets-control">
+                        <div class="card-head-text">
+                            <h2>Widgets Control</h2>
+                            <p>Show/Hide Widgets</p>
+                        </div>
+                        
+                        <form class="mt-15">
+                            <div class="check">
+                                <input type="checkbox" name="draft" id="draft" checked>
+                                <label for="draft">Quick Draft</label>
+                            </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="target" id="target" checked>
+                                <label for="target">Yearly Targets</label>
+                            </div>
+
+                           <div class="check">
+                                <input type="checkbox" name="tickets" id="tickets" checked>
+                                <label for="tickets">Tickets Statistics</label>
+                           </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="news" id="news" checked>
+                                <label for="news">Latest News</label>
+                            </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="tasks" id="tasks">
+                                <label for="tasks">Latest Tasks</label>
+                            </div>
+
+                            <div class="check">
+                                <input type="checkbox" name="items" id="items" checked>
+                                <label for="items">Top Search Items</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="card backup-manager">
+                        <div class="card-head-text">
+                            <h2>Backup Manager</h2>
+                            <p>Control Backup Time And Location</p>
+                        </div>
+
+                        <form class="plans mt-15 pb-10">
+                            <div class="radio">
+                                <input type="radio" id="daily" name="plan" checked>
+                                <label for="daily">Daily</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="weekly" name="plan">
+                                <label for="weekly">Weekly</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="monthly" name="plan">
+                                <label for="monthly">Monthly</label>
+                            </div>
+                        </form>
+
+                        <div class="server-container mt-20">
+                            <div class="server one">
+                                <i class="fa-solid fa-server"></i>
+                                <span>Megaman</span>
+                            </div>
+                            <div class="server two">
+                                <i class="fa-solid fa-server"></i>
+                                <span>Zero</span>
+                            </div>
+                            <div class="server three">
+                                <i class="fa-solid fa-server"></i>
+                                <span>Sigma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

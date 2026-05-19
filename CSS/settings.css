@@ -1,0 +1,249 @@
+/* global values  */
+.settings-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+@media (max-width: 1200px){
+    .settings-content{
+        grid-template-columns: 1fr;
+    }
+}
+.site-control{
+    position: relative;
+}
+.site-control textarea{
+    outline: none;
+    resize: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+@media (max-width: 480px){
+    .site-control .website-control > span{
+        font-size: 15px;
+    }
+    .site-control textarea{
+        height: 120px;
+    }
+    .site-control .toggle-switch-off{
+        display: none;
+    }
+}
+/* ************** */
+.general-info form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.general-info form div label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--grey-color);
+}
+.general-info form div input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.general-info form div > .mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.general-info form div > .mail a{
+    margin-right: 10px;
+    font-weight: 700;
+    color: var(--blue-color);
+}
+.general-info form div input[type="email"]{
+    width: 85%;
+    cursor: not-allowed;
+    background-color: rgb(0, 117, 255, 0.10);
+}
+@media (max-width: 480px){
+    .general-info label{
+        font-size: 14px;
+    }
+    .general-info form div > .mail a{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+}
+/* ***************** */
+.security-info span{
+    font-weight: 500;
+}
+.security-info .password a{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    padding: 5px 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+.security-info .password a:hover{
+    background-color: #016ae2;
+}
+.security-info .two-f-a{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.security-info .devices a{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    padding: 5px 10px;
+    background-color: #eee;
+    color: black;
+    border-radius: 6px;
+    transition: var(--main-transition);
+}
+.security-info .devices a:hover{
+    background-color: #ddd;
+}
+@media (max-width: 480px){
+    .security-info span{
+        font-size: 14px;
+    }
+    .security-info .password a{
+        font-size: 12px;
+    }
+    .security-info .two-f-a .toggle-switch-on{
+        width: 60px;
+        height: 25px;
+        border-radius: 16px;
+        background-color: var(--blue-color);
+        position: absolute;
+        right: 0;
+        top: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .security-info .two-f-a .toggle-switch-on > i{
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .security-info .devices a{
+        font-size: 12px;
+    }
+}
+/* *************** */
+.social-info .input-row{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+.social-info .input-row i{
+    margin-left: 10px;
+    padding-right: 30px;
+    color: #888;
+    position: relative;
+    transition: var(--main-transition);
+}
+.social-info .input-row i::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 26px;
+    height: calc(100% + 20px);
+    width: 1px;
+    background-color: #ccc;
+}
+.social-info .input-row input{
+    padding: 10px;
+    border: none;
+    background-color: #f6f6f6;
+}
+.social-info .twitter:focus-within i{
+    color: var(--twitter-color);
+}  
+.social-info .facebook:focus-within i{
+    color: var(--facebook-color);
+}  
+.social-info .linkedIn:focus-within i{
+    color: var(--linkedIn-color);
+}  
+.social-info .youtube:focus-within i{
+    color: var(--youtube-color);
+}  
+/* ****************  */
+.widgets-control form .check{
+    padding: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.widgets-control form .check input{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.widgets-control form .check label{
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (max-width: 480px){
+    .widgets-control label{
+        font-size: 15px;
+    }
+}
+/* ************ */
+.backup-manager form.plans{
+    border-bottom: 1px solid #eee;
+}
+.backup-manager form.plans div.radio{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.backup-manager form.plans div.radio input,
+.backup-manager form.plans div.radio label{
+    cursor: pointer;
+}
+.backup-manager form.plans div.radio input{
+    width: 20px;
+    height: 20px;
+}
+.backup-manager .server-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.backup-manager .server-container .server{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    padding: 20px 0;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.backup-manager .server-container .server:hover{
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+.backup-manager .server-container .server i{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+@media (max-width: 480px){
+    .backup-manager label{
+        font-size: 15px;
+    }
+    .backup-manager .server > span{
+        font-size: 14px;
+    }
+}

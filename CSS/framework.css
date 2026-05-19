@@ -1,0 +1,176 @@
+/* Start Padding And Margin  */
+.w-full{
+    width: 100%;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-20{
+    padding: 20px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-40{
+    padding-bottom: 40px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.m-10{
+    margin: 10px;
+}
+.m-20{
+    margin: 20px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.rad-6{
+    border-radius: 6px;
+}
+.rad-10{
+    border-radius: 10px;
+}
+/* End Padding And Margin  */
+/* Start Display  */
+.full-w{
+    width: 100%;
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-space{
+    display: flex;
+    justify-content: space-between;
+}
+.d-flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+.d-flex-around{
+    display: flex;
+    justify-content: space-around;
+}
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-position{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End Display  */
+/* Start Positioning  */
+.p-relative{
+    position: relative;
+}
+/* End Positioning  */
+/* Start Text  */
+.txt-center{
+    text-align: center;
+}
+/* End Text  */
+/* Start color  */
+.white-bg{
+    background-color: white;
+}
+.fff-bg{
+    background-color: #fff;
+}
+.eee-bg{
+    background-color: #eee;
+}
+.blue-bg{
+    background-color: #0075ff;
+}
+.orange-bg{
+    background-color: #f59e0b;
+}
+.green-bg{
+    background-color: #22c55e;
+}
+.red-bg{
+    background-color: #f44336;
+}
+.c-white{
+    color: white;
+}
+.c-blue{
+    color: #0075ff;
+}
+.c-orange{
+    color: #f59e0b;
+}
+.c-green{
+    color: #22c55e;
+}
+.c-grey{
+    color: #888;
+}
+.c-red{
+    color: #f44336;
+}
+/* End color  */
+/* Start font  */
+/* End font  */
+.text-capitalize{
+    text-transform: capitalize;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-13{
+    font-size: 13px;
+}

@@ -1,0 +1,152 @@
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+@media (max-width: 1200px){
+    .projects-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.project{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+.project .heading .project-date{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-weight: 600;
+}
+.project .team{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.project .team img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: var(--main-transition) ease-in-out;
+}
+.project .team img:hover{
+    z-index: 100;
+}
+.project .project-tags{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 15px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.project .project-tags > span{
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.project .project-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project .project-info > .prog{
+    background-color: #eee;
+    height: 8px;
+    width: 260px;
+    border-radius: 15px;
+    position: relative;
+}
+.project .project-info > .prog::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+    height: 100%;
+}
+.elzero-dash .project-info > .prog::before{
+    background-color: red;
+    width: 45%;
+}
+.academy-portal .project-info > .prog::before{
+    background-color: var(--green-color);
+    width: 60%;
+}
+.chatting-app .project-info > .prog::before{
+    background-color: var(--blue-color);
+    width: 80%;
+}
+.ahmed-dash .project-info > .prog::before{
+    background-color: var(--green-color);
+    width: 30%;
+}
+.ahmed-portal .project-info > .prog::before{
+    background-color: var(--green-color);
+    width: 75%;
+}
+.mohamed-app .project-info > .prog::before{
+    background-color: var(--red-color);
+    width: 40%;
+}
+.mohamed-dash .project-info > .prog::before{
+    background-color: var(--green-color);
+    width: 60%;
+}
+.mohamed-portal .project-info > .prog::before{
+    background-color: var(--blue-color);
+    width: 20%;
+}
+.ahmed-app .project-info > .prog::before{
+    background-color: var(--red-color);
+    width: 55%;
+}
+
+.project .project-info > .price > i{
+    margin-right: -5px;
+}
+.project .project-info > .price{
+    font-weight: 600;
+}
+
+@media (max-width: 480px){
+    .project .project-date{
+        font-size: 11px;
+    }
+    .project .heading > p{
+        font-size: 13px;
+    }
+    .project .team{
+        justify-content: center;
+        margin-left: 0;
+    }
+    .project .team > img{
+        width: 33px;
+        height: 33px;
+        margin-left: 0;
+    }
+    .project .project-tags{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .project .project-tags > span{
+        font-size: 12px;
+    }
+    .project .project-info > .prog{
+        width: 120px;
+        height: 6px;
+    }
+    .project .project-info > .price{
+        font-size: 12px;
+    }
+}
