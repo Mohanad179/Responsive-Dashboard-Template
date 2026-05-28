@@ -22,6 +22,7 @@
 body{
     font-family: "Open Sans", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 ul{
     list-style-type: none;
@@ -168,17 +169,17 @@ input:focus{
 .page{
     display: flex;
     min-height: 100vh;
-    overflow-x: hidden;
     background-color: var(--section-background);
 }
 .sidebar{
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     padding: 20px;
     width: 220px;
     box-shadow: 0 0 10px #ddd;
     background-color: white;
-    min-height: 100vh;
-    position: relative;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 }
 .sidebar > h3{
     text-align: center;
